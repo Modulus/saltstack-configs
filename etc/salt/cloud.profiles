@@ -1,0 +1,24 @@
+ubuntu:
+  provider: linode
+  size: Linode 1024
+  image: Ubuntu 14.04 LTS
+  location: Frankfurt, DE
+  minion:
+    master: xx.xx.x.x
+
+centos: 
+  provider: linode
+  size: Linode 1024
+  image: CentOS 6.5
+  location: Frankfurt, DE
+  minion: 
+    master: xx.xx.x.x
+
+ubuntu-do:
+  provider: digitalocean
+  image: 14.04 x64
+  size: 512MB
+  location: New York 1
+  private_networking: True
+  minion:
+    master: xx.xx.x.x
