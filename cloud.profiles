@@ -1,6 +1,6 @@
 do-ubuntu:
   provider: do-config
-  image: 14.04 x64
+  image: 14.04.3 x64
   size: 512MB
   location: New York 1
   private_networking: True
