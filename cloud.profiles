@@ -6,3 +6,9 @@ do-ubuntu:
   private_networking: True
   backups_enabled: False
   ipv6: True
+
+li_arch:
+  provider: li-config
+  size: Linode 1024
+  image: Arch Linux 2015.02
+  location: london
