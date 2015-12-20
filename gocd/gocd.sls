@@ -1,7 +1,9 @@
-install_unzip:
+install_required_tools:
   pkg.installed:
-    - name: unzip
-
+    - pkgs: 
+	  - unzip
+	  - nginx
+	
 install_gocd:
   archive.extracted:
     - name: /srv/
