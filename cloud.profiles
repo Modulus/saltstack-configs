@@ -1,8 +1,52 @@
 do-ubuntu:
   provider: do-config
-  image: 14.04 x64
+  image: 14.04.3 x64
   size: 512MB
-  location: New York 1
+  location: London 1
   private_networking: True
   backups_enabled: False
   ipv6: True
+
+do-salt-ubuntu:
+  provider: do-config
+  image: Salt installed
+  size: 512MB
+  location: New York 2
+  private_networking: True
+  backups_enabled: False
+  ipv6: False
+
+do-docker-ubuntu:
+  provider: do-config
+  image: Docker 1.9.1 on 14.04
+  size: 512MB
+  location: New York 1
+  backups_enabled: False
+  ipv6: True
+
+do-coreos:
+  provider: do-config
+  image: 766.5.0 (stable)
+  size: 512MB
+  location: London 1
+  private_networking: True
+  backups_enabled: False
+  ipv6: True
+
+do-centos:
+  provider: do-config
+  image: 7.1 x64
+  size: 512MB
+  location: Amsterdam 2
+  private_networking: True
+  backups_enabled: False
+  ipv6: True
+
+do-fedora:
+  provider: do-config
+  image: 21 x64
+  size: 512MB
+  location: Frankfurt 1
+  private_networking: True
+  backups_enabled: False
+  ipv6: False
