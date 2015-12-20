@@ -4,7 +4,8 @@ install_java:
 java_home:
   environ.setenv:
     - name: JAVA_HOME
-	- value: /usr/bin/java
+	- value: /usr/lib/jvm/java-1.7.0-openjdk-amd64
+	- update_minion: True
 	
 install_maven:
   pkg.installed:
