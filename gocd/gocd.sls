@@ -30,12 +30,20 @@ install_gocd:
     - source: /srv/go-server-15.3.0/server.sh
     - require:
       - archive: install_gocd
-
-run_gocd:
-  cmd.wait:
+	  
+start_gocd:
+  cmd.run:
     - name: /srv/go-server-15.3.0/server.sh
-    - watch:
-      - archive: install_gocd
     - require:
       - pkg: install_required_tools
       - file: /srv/go-server-15.3.0/server.sh
+
+
+#run_gocd:
+#  cmd.wait:
+#    - name: /srv/go-server-15.3.0/server.sh
+#    - watch:
+#      - archive: install_gocd
+#    - require:
+#      - pkg: install_required_tools
+#      - file: /srv/go-server-15.3.0/server.sh
